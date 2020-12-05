@@ -14,7 +14,7 @@
  * limitations under the License.
  */
 
-package co.aospa.camerahelper;
+package com.kracken.camerahelper;
 
 import android.app.AlertDialog;
 import android.content.Context;

@@ -1,5 +1,5 @@
 type hal_camera_motor_oneplus7pro, coredomain, domain;
-hal_server_domain(hal_camera_motor_oneplus7pro, hal_pa_camera_motor)
+hal_server_domain(hal_camera_motor_oneplus7pro, hal_kracken_camera_motor)
 
 type hal_camera_motor_oneplus7pro_exec, exec_type, file_type, system_file_type;
 init_daemon_domain(hal_camera_motor_oneplus7pro)

@@ -14,11 +14,7 @@
 # limitations under the License.
 #
 
-ifneq ($(TARGET_IS_ONEPLUS_T_DEVICE),true)
 PRODUCT_SHIPPING_API_LEVEL := 28
-else
-PRODUCT_SHIPPING_API_LEVEL := 29
-endif
 
 # Get non-open-source specific aspects
 $(call inherit-product-if-exists, vendor/oneplus/oneplus7pro/oneplus7pro-vendor.mk)
@@ -30,15 +26,10 @@ PRODUCT_PACKAGES += \
 # Overlays
 DEVICE_PACKAGE_OVERLAYS += \
     $(LOCAL_PATH)/overlay \
-    $(LOCAL_PATH)/overlay-pa
+    $(LOCAL_PATH)/overlay-kracken
 
-ifneq ($(TARGET_IS_ONEPLUS_T_DEVICE),true)
 DEVICE_PACKAGE_OVERLAYS += \
     $(LOCAL_PATH)/overlay-specific/op7
-else
-DEVICE_PACKAGE_OVERLAYS += \
-    $(LOCAL_PATH)/overlay-specific/op7t
-endif
 
 # Screen density
 PRODUCT_AAPT_CONFIG := normal

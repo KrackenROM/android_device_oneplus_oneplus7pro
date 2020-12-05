@@ -14,7 +14,7 @@
  * limitations under the License.
  */
 
-package co.aospa.camerahelper;
+package com.kracken.camerahelper;
 
 import android.os.FileUtils;
 import android.text.TextUtils;

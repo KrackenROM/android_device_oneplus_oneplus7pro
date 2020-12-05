@@ -19,12 +19,6 @@
 
 DEVICE_PATH := device/oneplus/oneplus7pro
 
-ifeq ($(TARGET_IS_ONEPLUS_T_DEVICE),true)
-TARGET_OTA_ASSERT_DEVICE := oneplus7tpro,OnePlus7TPro
-else
-TARGET_OTA_ASSERT_DEVICE := oneplus7pro,OnePlus7Pro
-endif
-
 # Display
 TARGET_SCREEN_DENSITY := 560
 
